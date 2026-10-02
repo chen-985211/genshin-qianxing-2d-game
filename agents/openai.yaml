@@ -1,4 +1,4 @@
 interface:
   display_name: "原神·千星奇域二维小游戏开发"
   short_description: "按实机验证流程编写 Lua，并逐步指导千星奇域小游戏搭建、动效和结算"
-  default_prompt: "使用 $genshin-qianxing-2d-game，按照已验证的通用流程帮我开发一个二维小游戏，并根据我的进度指导编辑器操作。"
+  default_prompt: "使用 $genshin-qianxing-2d-game，帮我开发二维小游戏并逐步指导编辑器操作，编写或修改 Lua 前先完整读取 Skill 内的 references/AI编码必读.md。"
