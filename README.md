@@ -4,7 +4,9 @@
 
 适用范围：单人、电脑键鼠、二维 UI 小游戏。包含概念图拆解与视觉还原、模板与宿主搭建、官方成功结算、动效音效接入，以及截图、日志和 `.gia` 排错流程。
 
-**当前状态（2026-10-02）：**操作指南由作者实机验证；整理成 Skill 后的独立新对话试用待完成。当前尚未公开发布，也尚未添加开源许可证。
+仓库：[chen-985211/genshin-qianxing-2d-game](https://github.com/chen-985211/genshin-qianxing-2d-game) · 默认分支：`main`
+
+**当前状态（2026-10-02）：**已创建私有 GitHub 仓库并推送代码。基础编辑器搭建流程由作者实机验证；整理成 Skill 后的独立新对话试用待完成。尚未公开发布，也尚未添加开源许可证。
 
 ## 仓库内容
 
@@ -86,7 +88,9 @@ Skill 提供流程和约束，具体游戏代码在使用时生成。游戏接�
 
 ## 别人如何下载和安装
 
-以下为仓库公开后的试用方式；`OWNER` 是发布者的 GitHub 用户名占位符，正式发布前要替换成真实地址。
+当前仓库为私有：拥有仓库读取权限的人可以按以下方式安装试用。其他人暂时无法访问或下载；公开后可继续使用同一个地址安装。
+
+通过安装器访问私有仓库时，需要在运行 Codex 的环境中完成 GitHub 身份验证，并使用有读取权限的账号；手动下载 ZIP 时，也需要在浏览器中登录有权限的账号。
 
 ### 方式一：让 Codex 安装
 
@@ -94,9 +98,10 @@ Skill 提供流程和约束，具体游戏代码在使用时生成。游戏接�
 
 ```text
 使用 $skill-installer，从下面的 GitHub 仓库安装 Skill：
-https://github.com/OWNER/genshin-qianxing-2d-game
+https://github.com/chen-985211/genshin-qianxing-2d-game
 
 SKILL.md 位于仓库根目录，仓库内路径为 .
+使用 main 分支。
 安装名称请使用 genshin-qianxing-2d-game。
 请同时保留 references 和 agents 目录。
 ```
@@ -105,7 +110,7 @@ SKILL.md 位于仓库根目录，仓库内路径为 .
 
 ### 方式二：下载 ZIP 后手动安装
 
-1. 下载仓库 ZIP 并解压。
+1. 打开[仓库页面](https://github.com/chen-985211/genshin-qianxing-2d-game)，下载 `main` 分支的 ZIP 并解压。
 2. 找到直接包含 `SKILL.md` 的目录，将该目录命名为 `genshin-qianxing-2d-game`。完整保留其 `references` 和 `agents` 子目录，不能只复制 `SKILL.md`。
 3. 按当前 Codex 文档，将整个目录放入用户级 `~/.agents/skills/`；Windows 对应用户主目录下的 `.agents/skills/`。如果安装器已经装过，沿用已有位置，避免在不同位置重复安装同名 Skill。
 4. 确认路径为 `~/.agents/skills/genshin-qianxing-2d-game/SKILL.md`，没有多套一层解压目录。
@@ -117,7 +122,7 @@ SKILL.md 位于仓库根目录，仓库内路径为 .
 
 1. 根据实测修订 Skill 和操作指南，更新本页试用状态，注明实际验证范围。
 2. 由维护者确定开源许可证并添加 `LICENSE`。
-3. 创建公开 GitHub 仓库，推送已检查的 Skill 文件，将本页 `OWNER` 替换成真实用户名。
+3. 将已检查的修改推送到现有仓库，再将仓库可见性改为公开，并更新本页状态；无需重新创建仓库。
 4. 发布带版本号的首个试用版本，例如 `v0.1.0`，分享仓库地址与安装提示。
 5. 收集试用反馈，修订后发布新版本。
 
