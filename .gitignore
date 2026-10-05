@@ -1,3 +1,9 @@
 .DS_Store
 __pycache__/
 *.py[cod]
+
+# 本地实验与凭据不随 Skill 分发。
+/experiments/
+.env
+.env.*
+!.env.example
